@@ -1,5 +1,3 @@
-const CheckInServices = require("./services/check-in");
-const CheckIn = require("./cron/check-in-cron");
 const checkInCron = require("./cron/check-in-cron");
 const { CronJob } = require("cron");
 
@@ -16,4 +14,6 @@ const { CronJob } = require("cron");
 
   /// Start the cron job.
   job.start();
+
+  console.log("Started");
 })();
